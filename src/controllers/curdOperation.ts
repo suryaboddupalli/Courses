@@ -9,6 +9,7 @@ class curdOperation {
             return err
         }
     }
+
     async getCustomers() {
         try {
             return await curdOperationService.getCustomers()
@@ -16,6 +17,7 @@ class curdOperation {
             return err
         }
     }
+
     async getCustomer(req: IParamsRequest) {
         try {
             return await curdOperationService.getCustomer(req.params.id)
@@ -23,6 +25,7 @@ class curdOperation {
             return err
         }
     }
+
     async updateCustomer(req: IPayloadRequest) {
         try {
             return await curdOperationService.updateCustomer(req.payload)
@@ -30,6 +33,7 @@ class curdOperation {
             return err
         }
     }
+
     async deleteCustomer(req: IParamsRequest) {
         try {
             return await curdOperationService.deleteCustomer(req.params.id)
