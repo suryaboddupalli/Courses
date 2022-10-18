@@ -1,31 +1,34 @@
 {
-  "name": "curd_operations",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start:build": "tsc -w",
-    "start:run": "nodemon ./dist/server.js",
-    "start": "concurrently npm:start:*",
-    "lint": "eslint . --ext .ts",
-    "prepare": "husky install"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@hapi/hapi": "^20.2.2",
-    "@types/pg": "^8.6.5",
-    "dotenv": "^16.0.1",
-    "husky": "^8.0.1",
-    "pg": "^8.7.3"
-  },
-  "devDependencies": {
-    "@types/hapi__hapi": "^20.0.12",
-    "@types/node": "^18.7.6",
-    "@typescript-eslint/eslint-plugin": "^5.33.1",
-    "@typescript-eslint/parser": "^5.33.1",
-    "eslint": "^8.22.0",
-    "typescript": "^4.7.4"
-  }
+    "name": "curd_operations",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start:build": "tsc -w",
+        "start:run": "nodemon ./dist/server.js",
+        "start": "concurrently npm:start:*",
+        "lint": "eslint . --ext .ts",
+        "prettier": "prettier --check .",
+        "prettier:fix": "prettier --write .",
+        "prepare": "husky install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@hapi/hapi": "^20.2.2",
+        "@types/pg": "^8.6.5",
+        "dotenv": "^16.0.1",
+        "pg": "^8.7.3",
+        "prettier": "^2.7.1"
+    },
+    "devDependencies": {
+        "@types/hapi__hapi": "^20.0.12",
+        "@types/node": "^18.7.6",
+        "@typescript-eslint/eslint-plugin": "^5.33.1",
+        "@typescript-eslint/parser": "^5.33.1",
+        "eslint": "^8.22.0",
+        "husky": "^8.0.1",
+        "typescript": "^4.7.4"
+    }
 }
