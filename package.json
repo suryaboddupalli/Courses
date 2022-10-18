@@ -11,7 +11,7 @@
         "prettier": "prettier --check .",
         "prettier:fix": "prettier --write .",
         "prepare": "husky install",
-        "test": "jest"
+        "test": "jest --coverage"
     },
     "keywords": [],
     "author": "",
