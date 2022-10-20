@@ -1,7 +1,7 @@
 import { IPayload } from '../interfaces/curdOperations'
 import { curdOperation } from '../repository/curdOperation'
 
-class operation {
+class CurdOperationService {
     async addCustomer(payload: IPayload) {
         return await curdOperation.addCustomer(payload)
     }
@@ -19,4 +19,4 @@ class operation {
     }
 }
 
-export const curdOperationService = new operation()
+export const curdOperationService = new CurdOperationService()
